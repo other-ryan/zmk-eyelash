@@ -30,6 +30,17 @@
 
 / {
     behaviors {
+        tl: tap_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+        };
+
         tp: tap_preferred {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_PREFERRED";
