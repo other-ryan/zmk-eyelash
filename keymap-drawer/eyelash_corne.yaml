@@ -45,8 +45,8 @@ layers:
   - '&td_mt'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-return$$', h: lower}
   - {t: '$$mdi:keyboard-space$$', h: lower}
+  - {t: '$$mdi:keyboard-return$$', h: lower}
   - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+$$mdi:apple-keyboard-command$$
   lower:
