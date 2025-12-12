@@ -47,8 +47,8 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: lower}
   - {t: '$$mdi:keyboard-space$$', h: lower}
-  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
   lower:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
