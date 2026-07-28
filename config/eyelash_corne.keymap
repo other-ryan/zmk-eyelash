@@ -135,10 +135,23 @@
             label = "screen";
             display-name = "screen";
             bindings = <
-&bt BT_NXT  &trans  &trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                            &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans                &trans                &trans                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans                &trans                &trans                &trans                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans                &trans                &trans                                                                           &trans  &trans  &trans
+&bt BT_NXT    &trans  &trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                            &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans                &trans                &trans                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+&tl 4 LSHIFT  &trans  &trans  &trans                &trans                &trans                &trans                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans                &trans                &trans                                                                           &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        screensp {
+            label = "screensp";
+            display-name = "screensp";
+            bindings = <
+&bt BT_CLR     &trans  &trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))                            &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &trans                &trans                &trans                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+&tl 4 LSHIFT   &trans  &trans  &trans                &trans                &trans                &trans                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans                &trans                &trans                                                                           &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
